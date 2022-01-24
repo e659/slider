@@ -1,0 +1,85 @@
+body {
+    font-family: 'segoe ui light';
+}
+
+
+/* Header */
+
+.item img {
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.iten-caption {
+    background-color: aqua;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    text-align: center;
+    width: 80%;
+    background-color: white;
+    padding: 5px;
+}
+
+.iten-caption h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.iten-caption p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.lightbox-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    /* top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; */
+    inset: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.lightbox-img {
+    width: 60%;
+    height: 500px;
+    background-image: url(../images/carousel12.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+/* end header */
+
+@media (max-width: 769px) {
+    header .header-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    header .header-container {
+        width: 50%;
+    }
+}
